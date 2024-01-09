@@ -12,7 +12,7 @@ repos:
 #     -   id: seed-isort-config
 
 -   repo: https://github.com/pre-commit/mirrors-isort
-    rev: v5.13.2
+    rev: v5.10.1
     hooks:
     -   id: isort
 
@@ -22,7 +22,7 @@ repos:
     -    id: black
          language_version: python3.10.11
 
--   repo: https://gitlab.com/pycqa/flake8
+-   repo: https://github.com/pycqa/flake8
     rev: 3.8.4
     hooks:
     -   id: flake8
