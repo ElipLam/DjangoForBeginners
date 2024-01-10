@@ -26,6 +26,7 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
                     <a class="dropdown-item " href="{% url 'password_change'%}">Change password</a>
+                    <a class="dropdown-item " href="{% url 'password_reset'%}">Reset password</a>
                     <form method="post" action="{% url 'logout' %}">
                         {% csrf_token %}
                         <button class="dropdown-item" type="submit">Log Out</button>
