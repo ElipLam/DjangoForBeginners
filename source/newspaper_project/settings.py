@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     # Local
     "users.apps.UsersConfig",  # new users app
     "pages.apps.PagesConfig",  # new pages app
+    "articles.apps.ArticlesConfig",  # new articles app
     # 3rd Party
     "crispy_forms",  # new
     "crispy_bootstrap4",
@@ -111,7 +112,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "UTC"
+# TIME_ZONE = 'UTC' #default
+TIME_ZONE = "Asia/Ho_Chi_Minh"  # local timezome
 
 USE_I18N = True
 
