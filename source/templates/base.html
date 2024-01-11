@@ -26,6 +26,9 @@
                     {{ user.username }}
                 </a>
                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                    {% if user.is_superuser %}
+                    <a class="dropdown-item " href="{% url 'admin:index' %}">Admin</a>
+                    {% endif %}
                     <a class="dropdown-item " href="{% url 'password_change'%}">Change password</a>
                     <a class="dropdown-item " href="{% url 'password_reset'%}">Reset password</a>
                     <form method="post" action="{% url 'logout' %}">
